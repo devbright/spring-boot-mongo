@@ -9,8 +9,10 @@ application.yml file contains mongodb configuration details. Please change accor
 ## Build and Run
 
 Build
+
 `mvn clean package`
 
 -------------------------------------
 Run
+
 `mvn spring-boot:run`
