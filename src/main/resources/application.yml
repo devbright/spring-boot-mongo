@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      authenicationDatabase : admin
+      host: localhost
+      port: 27017
+      database: callrecords
+      userName: root
+      password: admin
