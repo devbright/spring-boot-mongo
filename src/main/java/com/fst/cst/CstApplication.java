@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -19,6 +20,7 @@ import com.fst.repository.CallHistoryRepository;
 
 @SpringBootApplication
 @Import(value= {MongoConfiguration.class})
+@ComponentScan(basePackages= {"com.fst"})
 public class CstApplication implements CommandLineRunner {
 
 	@Autowired
